@@ -366,9 +366,9 @@ with st.form("new_log_form"):
     driver_gender = st.selectbox("Driver Gender", ["Male", "Female"])
     driver_age = st.number_input("Driver Age", min_value=16, max_value=100, value=27)
     driver_race = st.text_input("Driver Race")
-    search_conducted = st.selectbox("Was a search conducted?", ["0", "1"])
+    search_conducted = st.selectbox("Was a search conducted?", ["no", "yes"])
     search_type = st.text_input("Search Type")
-    drugs_related_stop = st.selectbox("Was it drug related?", ["0", "1"])
+    drugs_related_stop = st.selectbox("Was it drug related?", ["no", "yes"])
     stop_duration = st.selectbox("Stop Duration", stop_duration_options)
     vehicle_number = st.text_input("Vehicle Number")
 
